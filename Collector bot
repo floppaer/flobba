@@ -1,6 +1,7 @@
 local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport
 if syn then request = syn.request end
 local collectorfound = false
+	    wait(7)
             game:GetService("Players").LocalPlayer.PlayerGui.StartMenu.Finish:FireServer()
             wait(3)
 			function jungleCollector() 
