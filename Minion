@@ -61,7 +61,7 @@ local b2 = LeftGroupBox:AddButton({
 })
 
 LeftGroupBox:AddToggle('MyToggle', {
-    Text = 'This is a toggle',
+    Text = 'Nostun',
     Default = true,
     Tooltip = 'No stun',
 
