@@ -437,7 +437,7 @@ Section:NewButton("Get Player Cframe", "Press again if it won't work", function(
 end)
 
 Section:NewButton("Fps Booster (Not much)", "demon", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Paopro/Fop-hub/main/Fpsboosternotmuch"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/fpsboost"))()
 end)
 
 Section:NewButton("Illu detector", "Illu detector", function()
