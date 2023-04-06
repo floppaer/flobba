@@ -902,7 +902,7 @@ local k1 = bcr:AddButton({
 Library:SetWatermarkVisibility(true)
 
 -- Sets the watermark text
-Library:SetWatermark('This is a really long watermark to test the resizing')
+Library:SetWatermark('Made by Floppa https://discord.gg/cpUZyXfGMn')
 
 Library.KeybindFrame.Visible = true; -- todo: add a function for this
 
