@@ -78,6 +78,7 @@ local collectorfound = false
 if collectorfound == true then
     return
 else
+    syn.queue_on_teleport()
     game:GetService("ReplicatedStorage").toMenu:FireServer()
     wait(2)
     local Server = game:GetService("ReplicatedStorage").Servers:GetChildren()
