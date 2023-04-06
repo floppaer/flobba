@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://pastebin.com/raw/stggPUBM", true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/qNMunbP8", true))()
 
 
 local repo = 'https://raw.githubusercontent.com/violin-suzutsuki/LinoriaLib/main/'
