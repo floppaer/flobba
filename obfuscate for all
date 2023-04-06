@@ -18,7 +18,7 @@ end)
     setfpscap(360)
     loadstring(game:HttpGet("https://pastebin.com/raw/YphFtyV5", true))() ------focus roblox
     loadstring(game:HttpGet("https://pastebin.com/raw/SFbtDaQk", true))() ------ logger
-    loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/fimcopy"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/fimcopy"))()
     game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
         setfpscap(360)
