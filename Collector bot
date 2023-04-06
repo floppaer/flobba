@@ -77,7 +77,7 @@ local collectorfound = false
 			end
             
             
-            
+wait(2)
 if collectorfound == true then
     return
 else
@@ -95,3 +95,4 @@ else
     game:GetService("ReplicatedStorage"):WaitForChild("toServer"):FireServer(unpack(args))
     end
 end
+queueteleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/Collector%20bot"))()]])
