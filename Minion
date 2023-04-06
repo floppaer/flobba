@@ -827,8 +827,14 @@ local k1 = bcr:AddButton({
     Tooltip = 'demon'
 })
 
+local k2 = bcr:AddButton({
+    Text = 'Collector bot',
+    Func = function()
 
-
+    end,
+    DoubleClick = false,
+    Tooltip = 'Collector bot hop untill found'
+})
 
 
 
