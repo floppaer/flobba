@@ -2,6 +2,12 @@ local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport
 if syn then request = syn.request end
 
 
+if game.GameId == 578392296 then
+    if game.PlaceId ~= 5411459567 then
+        notify("Joining AFK World")
+        game:GetService('TeleportService'):Teleport(5411459567)
+end
+
 game:GetService("RunService"):Set3dRenderingEnabled(false)
 
 setfpscap(4)
