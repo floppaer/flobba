@@ -1,5 +1,25 @@
 local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport
 if syn then request = syn.request end
+repeat
+    wait()
+until game:IsLoaded()
+wait()
+
+if getconnections then
+    for _, v in next, getconnections(game:GetService("Players").LocalPlayer.Idled) do
+        v:Disable()
+    end
+end
+
+if not getconnections then
+    game:GetService("Players").LocalPlayer.Idled:connect(
+        function()
+            game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+        end
+    )
+    print("poopy exploit")
+end
+
 
 
 if game.GameId == 578392296 then
@@ -11,11 +31,5 @@ end
 game:GetService("RunService"):Set3dRenderingEnabled(false)
 
 setfpscap(4)
-
-game:GetService("Players").LocalPlayer.Idled:connect(
-   function()
-       game:GetService("VirtalUser"):ClickButton2(Vector2.new())
-   end
-)
 
 queueteleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/anti%20afk"))()]])
