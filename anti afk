@@ -1,7 +1,11 @@
 local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport
 if syn then request = syn.request end
 
+game:GetService("RunService"):Set3dRenderingEnabled(false)
 
+setfpscap(4)
+
+queueteleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/anti%20afk"))()]])
 
 game:GetService("Players").LocalPlayer.Idled:connect(
    function()
@@ -11,14 +15,6 @@ game:GetService("Players").LocalPlayer.Idled:connect(
 
 
 if game.GameId == 578392296 then
-    if game.PlaceId ~= 5411459567 then
-        notify("Joining AFK World")
-        game:GetService('TeleportService'):Teleport(5411459567)
+    game:GetService('TeleportService'):Teleport(5411459567)
 end
 
-game:GetService("RunService"):Set3dRenderingEnabled(false)
-
-setfpscap(4)
-
-queueteleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/anti%20afk"))()]])
-end
