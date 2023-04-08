@@ -1,10 +1,15 @@
 local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport
 if syn then request = syn.request end
 
+
+game:GetService("RunService"):Set3dRenderingEnabled(false)
+
+setfpscap(4)
+
 game:GetService("Players").LocalPlayer.Idled:connect(
    function()
        game:GetService("VirtalUser"):ClickButton2(Vector2.new())
    end
 )
 
-queueteleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/Collector%20bot"))()]])
+queueteleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/anti%20afk"))()]])
