@@ -33,3 +33,4 @@ game:GetService("RunService"):Set3dRenderingEnabled(false)
 setfpscap(4)
 
 queueteleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/anti%20afk"))()]])
+end
