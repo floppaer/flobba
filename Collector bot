@@ -64,25 +64,21 @@ local collectorfound = false
 
 			if game.Workspace.Map.jungleCollectorDoor.Transparency == 1 then
 			   jungleCollector()
-			   Sound:Play()
 			   collectorfound = true
 			wait(1)
 			end
 			wait(1)
 			if game.Workspace.Map.beachCollectorDoor.Transparency == 1 then
 				beachcollector()
-				Sound:Play()
 				collectorfound = true
 			end
 			wait(1)
 			if game.Workspace.Map.desertCollectorDoor.Transparency == 1 then
 				desertCollector()
-				Sound:Play()
 			   collectorfound = true
 			end
 			wait(1)
 			if game.Workspace.Map.plainsCollectorDoor.Transparency == 1 then
-			   Sound:Play()
 			   plainsCollector() 
 			   collectorfound = true
 			end
@@ -90,7 +86,7 @@ local collectorfound = false
             
 wait(2)
 if collectorfound == true then
-    return
+    Sound:Play()
 else
     game:GetService("ReplicatedStorage").toMenu:FireServer()
     wait(2)
