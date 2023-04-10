@@ -3,26 +3,24 @@ repeat wait() until game:IsLoaded()
 local PlaceId = game.PlaceId
 if PlaceId == 10215650900 or PlaceId == 9978746069 or PlaceId == 10046661315  then
     setfpscap(360)
-    loadstring(game:HttpGet("https://pastebin.com/raw/YphFtyV5", true))() -----focus roblox
     loadstring(game:HttpGet("https://pastebin.com/raw/SFbtDaQk", true))() -----logger
     loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/Minion"))()
     game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
         setfpscap(360)
-        syn.queue_on_teleport(loadstring(game:HttpGet("https://pastebin.com/raw/nvjk2pe8", true))())
         syn.queue_on_teleport(loadstring(game:HttpGet("https://pastebin.com/raw/SFbtDaQk", true))())
         syn.queue_on_teleport(loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/Minion"))())
     end
 end)
     else -----fim copys
     setfpscap(360)
-    loadstring(game:HttpGet("https://pastebin.com/raw/YphFtyV5", true))() ------focus roblox
+---   loadstring(game:HttpGet("https://pastebin.com/raw/YphFtyV5", true))() ------focus roblox
     loadstring(game:HttpGet("https://pastebin.com/raw/SFbtDaQk", true))() ------ logger
     loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/fimcopy"))()
     game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
     if State == Enum.TeleportState.Started then
         setfpscap(360)
-        syn.queue_on_teleport(loadstring(game:HttpGet("https://pastebin.com/raw/YphFtyV5", true))())
+ ---       syn.queue_on_teleport(loadstring(game:HttpGet("https://pastebin.com/raw/YphFtyV5", true))())
         syn.queue_on_teleport(loadstring(game:HttpGet("https://pastebin.com/raw/SFbtDaQk", true))())
         syn.queue_on_teleport(loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/fimcopy"))())
     end
