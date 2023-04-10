@@ -1,5 +1,11 @@
 local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport
 if syn then request = syn.request end
+local Sound = Instance.new("Sound")
+Sound.Name = tostring(synCheck())
+Sound.SoundId = "rbxassetid://1001651643"
+Sound.Volume = 6
+Sound.Looped = true
+Sound.Parent = CoreGui
 local collectorfound = false
 	        repeat wait() until game:IsLoaded()
 	        wait(2)
@@ -58,21 +64,26 @@ local collectorfound = false
 
 			if game.Workspace.Map.jungleCollectorDoor.Transparency == 1 then
 			   jungleCollector()
+			   Sound:Play()
 			   collectorfound = true
 			wait(1)
 			end
 			wait(1)
 			if game.Workspace.Map.beachCollectorDoor.Transparency == 1 then
 				beachcollector()
+				Sound:Play()
 				collectorfound = true
 			end
 			wait(1)
 			if game.Workspace.Map.desertCollectorDoor.Transparency == 1 then
 				desertCollector()
+				Sound:Play()
 			   collectorfound = true
 			end
 			wait(1)
 			if game.Workspace.Map.plainsCollectorDoor.Transparency == 1 then
+			   Sound:Play()
+			   plainsCollector() 
 			   collectorfound = true
 			end
             
