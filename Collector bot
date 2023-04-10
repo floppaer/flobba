@@ -21,6 +21,7 @@ local collectorfound = false
 			
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2688.46655, 1029.5481, 1467.48914, -0.093883872, 0, -0.995583177, 0, 1, 0, 0.995583177, 0, -0.093883872)
 			fireclickdetector(game.Workspace.NPCs.jungleCollector.ClickDetector)
+			    ha:Play()
 			end
 			
 			
@@ -34,6 +35,7 @@ local collectorfound = false
 			
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-921.624878, 241.099426, 272.999756, 0, 0, -1, 0, 1, 0, 1, 0, 0)
 			fireclickdetector(game.Workspace.NPCs.beachCollector.ClickDetector)
+			    ha:Play()
 			end
 			
 			function desertCollector() 
@@ -46,6 +48,7 @@ local collectorfound = false
 			
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1547.11768, 354.259705, 2706.39087, 0.318800718, -0.884056211, -0.341776073, -0.190877691, 0.293320745, -0.936765194, 0.928402901, 0.363878757, -0.0752357543)
 			fireclickdetector(game.Workspace.NPCs.desertCollector.ClickDetector)
+			    ha:Play()
 			end
 			
 			function plainsCollector() 
@@ -58,6 +61,7 @@ local collectorfound = false
 			
 			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1279.97937, 1126.0459, -2449.45117, -0.996665716, -0.024980383, -0.0776744485, 9.81125181e-11, 0.951979995, -0.306160182, 0.0815925226, -0.305139393, -0.948805809)
 			fireclickdetector(game.Workspace.NPCs.plainsCollector.ClickDetector)
+			    ha:Play()
 			end
 			
 
@@ -86,7 +90,7 @@ local collectorfound = false
             
 wait(2)
 if collectorfound == true then
-    ha:Play()
+    return
 else
     game:GetService("ReplicatedStorage").toMenu:FireServer()
     wait(2)
