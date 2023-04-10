@@ -1,11 +1,11 @@
 local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport
 if syn then request = syn.request end
-local Sound = Instance.new("Sound")
-Sound.Name = tostring(synCheck())
-Sound.SoundId = "rbxassetid://1001651643"
-Sound.Volume = 6
-Sound.Looped = true
-Sound.Parent = CoreGui
+local ha = Instance.new("Sound")
+ha.Name = tostring(synCheck())
+ha.SoundId = "rbxassetid://1001651643"
+ha.Volume = 6
+ha.Looped = false
+ha.Parent = CoreGui
 local collectorfound = false
 	        repeat wait() until game:IsLoaded()
 	        wait(2)
@@ -86,7 +86,7 @@ local collectorfound = false
             
 wait(2)
 if collectorfound == true then
-    Sound:Play()
+    ha:Play()
 else
     game:GetService("ReplicatedStorage").toMenu:FireServer()
     wait(2)
