@@ -1,5 +1,17 @@
+
+
 local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport
 if syn then request = syn.request end
+
+
+
+if game.GameId == 578392296 then
+    if game.PlaceId ~= 5411459567 then
+        notify("Joining AFK World, please")
+        serverHop()
+        game:GetService('TeleportService'):Teleport(5411459567)
+    end
+end
 
 wait(0.5)local ba=Instance.new("ScreenGui")
 local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
