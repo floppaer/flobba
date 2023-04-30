@@ -498,14 +498,6 @@ local c1 =  RightGroupBox:AddButton({
     Tooltip = 'Get Cframe'
 })
 
-local c2 =  RightGroupBox:AddButton({
-    Text = 'Fps booster',
-    Func = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/floppaer/flobba/main/fpsboost"))()
-    end,
-    DoubleClick = false,
-    Tooltip = 'Fps booster'
-})
 
 local c3 =  RightGroupBox:AddButton({
     Text = 'Illu detector',
